@@ -16,7 +16,7 @@ int main(){
     for (int runs =1 ; true; runs ++){
         int foundnum = 0;
         allchars += sequence;
-        for (int i=0; i< (int) allchars.size(); i++){
+        for (int i=0; i< (int) allchars.size() && foundnum<heard.size(); i++){
             if(allchars[i] == heard[foundnum]){
             foundnum++;
             }
